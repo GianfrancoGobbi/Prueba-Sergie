@@ -1,5 +1,5 @@
 
-import { PERSONAS } from '../actions/index';
+import { AGREGAR_PERSONA } from '../actions/index';
 
 const initialState = {
   personas:
@@ -32,10 +32,10 @@ const initialState = {
 
 const rootReducer = (state = initialState, action) => {
   switch (action.type) {
-    case PERSONAS:
+    case AGREGAR_PERSONA:
       return {
         ...state,
-        personas: action.payload,
+        personas: [...state.personas, action.payload]
       };
       default:
         return state;

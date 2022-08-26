@@ -1,0 +1,22 @@
+.nav-boton {
+    width: 50%;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    border-width: 1px;
+    border-color: white;
+    border: none;
+    margin-bottom: 30px;
+    font-weight: 600;
+    box-shadow:  inset 0px 0px 20px rgba(0, 0, 0, 0),0px 0px 20px rgba(0, 0, 0, 0.286) ;
+    transition: 1s ;
+}
+
+.nav-boton:hover {
+    box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.144),  0px 0px 20px rgba(0, 0, 0, 0) ;
+    transition: 1s ;
+}
+
+.nav-boton:focus {
+    box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.081);
+    transition: 1s ;
+}

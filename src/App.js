@@ -15,8 +15,8 @@ import { Route, Routes } from 'react-router-dom';
 function App() {
   return (
     <div className="App">
+      <Nav />
       <Routes>
-        <Route exact path="/" element={<Nav />} />
         <Route path="/form" element={<Form />} />
         <Route path="/tabla" element={<Tabla />} />
       </Routes>

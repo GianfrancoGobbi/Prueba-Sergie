@@ -1,8 +1,8 @@
+export const AGREGAR_PERSONA = "AGREGAR_PERSONA";
 
-
-// export const personas = () => {
-//   return async dispatch => {
-   
-//   }
-// }
-
+export function agregarPersona(input) {
+    return {
+        type: AGREGAR_PERSONA,
+        payload: input
+    }
+}
